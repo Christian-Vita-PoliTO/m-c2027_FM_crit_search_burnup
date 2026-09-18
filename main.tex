@@ -27,12 +27,12 @@
 \addAuthor{Nicol\`o Abrate}{1}
 \addAuthor{Sandra Dulla}{1}
 % \addAuthor{Valerio Mascolino}{2}
-\addAuthor{William Walters}{3}
-\addAuthor{Fausto Franceschini}{3}
+% \addAuthor{William Walters}{3}
+\addAuthor{Fausto Franceschini}{2}
 
 \addAffiliation{1}{Politecnico di Torino, Dipartimento Energia, Torino, Italy}
 
-\addAffiliation{3}{Westinghouse Electric Company, Cranberry Township, PA, USA}
+\addAffiliation{2}{Westinghouse Mangiarotti, v. Timavo 59, Monfalcone, 34074, Italy}
 
 \Abstract{%
 The fission matrix (FM) method turns the criticality search of a heat-pipe micro reactor (HPMR) into the eigenproblem of a matrix, interpolated from a database of FMs tallied by a Monte Carlo (MC) code at different core configurations. In previous work the database was built over the fuel temperature and the control-drum angle, and the critical drum position at any power is found in a fraction of a second. This paper adds fuel burnup to the method without adding a third axis to the database. The burnup effect is factorized out of the interpolated matrix through a multiplicative Burnup Correction Ratio (BCR): the ratio between the matrices tallied at a burnup snapshot and at the fresh state, at fixed conditions. One low-statistics depletion of the VTB HPMR model at nominal power gives the compositions; twelve independent full-statistics transport calculations, restarted from it, tally the snapshot matrices at about 66 CPU\,h each. The statistical uncertainty of both databases is propagated to every result with an ensemble of fifty database realizations, in which each coefficient is perturbed independently within its tally uncertainty. Over a 66-month cycle at \SI{2}{MW} the critical drum angle moves from \ang{62} to \ang{12}; each time step takes less than a second on a single processor of a personal computer, the ensemble runs for the uncertainty budget included. Reference Serpent 2 calculations at the states returned by the algorithm give $k_{\rm eff}$ within $-59$ to $-5$ pcm of unity, with the same bias as at beginning of life. The three assumptions of the factorization -- angle-independent, frozen-temperature and single-history BCR -- are measured with dedicated campaigns and found at or below that residual.
